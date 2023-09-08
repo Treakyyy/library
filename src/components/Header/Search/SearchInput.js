@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setSearchQuery } from '../../../store/bookSlice';
 import './SearchInput.css'
 
-// Компонент для ввода поискового запроса
 function SearchInput({ onSearch }) {
   const searchQuery = useSelector((state) => state.books.searchQuery);
   const dispatch = useDispatch();
@@ -14,7 +13,7 @@ function SearchInput({ onSearch }) {
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
-      onSearch(); // Вызов функции onSearch, переданной через пропсы
+      onSearch(); 
     }
   };
 
