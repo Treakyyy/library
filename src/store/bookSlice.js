@@ -46,7 +46,7 @@ const bookSlice = createSlice({
         state.currentPage += 1; 
       },
       setSelectedBook: (state, action) => {
-        state.selectedBook = action.payload; // Обновление выбранной книги
+        state.selectedBook = action.payload; 
       }
     },
   extraReducers: (builder) => {
