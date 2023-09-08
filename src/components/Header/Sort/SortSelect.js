@@ -1,6 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSelectedSort } from '../../../store/bookSlice';
+import './SortSelect.css'
+
 
 function SortSelect() {
     const selectedSort = useSelector((state) => state.books.selectedSort);
@@ -12,8 +14,8 @@ function SortSelect() {
   
     return (
       <select className='sort-color' value={selectedSort} onChange={handleSortChange}>
-        <option className='sort-color' value="relevance">По релевантности (по умолчанию)</option>
-        <option className='sort-color' value="newest">Самые новые</option>
+        <option className='sort-option' value="relevance">Популярные</option>
+        <option className='sort-option' value="newest">Самые новые</option>
       </select>
     );
   }

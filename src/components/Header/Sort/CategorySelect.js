@@ -12,14 +12,14 @@ function CategorySelect({ searchBooks, selectedSort }) {
     };
   
     return (
-      <select value={selectedCategory} onChange={handleCategoryChange}>
-        <option value="all">Все категории</option>
-        <option value="art">Искусство</option>
-        <option value="biography">Биография</option>
-        <option value="computers">Компьютеры</option>
-        <option value="history">История</option>
-        <option value="medical">Медицина</option>
-        <option value="poetry">Поэзия</option>
+      <select className='sort-color' value={selectedCategory} onChange={handleCategoryChange}>
+        <option className='sort-option' value="all">Все категории</option>
+        <option className='sort-option' value="art">Искусство</option>
+        <option className='sort-option' value="biography">Биография</option>
+        <option className='sort-option' value="computers">Компьютеры</option>
+        <option className='sort-option' value="history">История</option>
+        <option className='sort-option' value="medical">Медицина</option>
+        <option className='sort-option' value="poetry">Поэзия</option>
       </select>
     );
   }
