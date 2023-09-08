@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(59, 54, 54);
+}
+h1{
+    text-align: center;
+    color: antiquewhite;
+}

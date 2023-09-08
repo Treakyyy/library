@@ -1,0 +1,39 @@
+.book-card {
+    display: inline-block; 
+    width: 400px; 
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center; 
+    vertical-align: top;
+    background-color: #dcd7d7;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .book-img {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 10px; 
+  }
+  
+  .categories-authors {
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
